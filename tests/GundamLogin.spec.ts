@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await page.getByRole('textbox', { name: 'Enter your username' }).click();
   await page.getByRole('button', { name: 'Create Account' }).click();
   await page.getByRole('textbox', { name: 'Choose a username' }).click();
