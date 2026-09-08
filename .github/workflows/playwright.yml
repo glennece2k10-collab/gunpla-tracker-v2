@@ -23,7 +23,7 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
       env:
-          GUNPLA SITE: ${{ secrets.GUNPLASITE }}
+          GUNPLA_SITE: ${{ secrets.GUNPLASITE }}
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
