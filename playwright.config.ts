@@ -26,7 +26,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: process.env.GUNPLASITE,
+    baseURL: process.env.GUNPLA_SITE,
     username: process.env.TEST_USERNAME!,
     password: process.env.TEST_PASSWORD!,
     email: process.env.TEST_EMAIL!,
