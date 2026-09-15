@@ -10,7 +10,7 @@ function captureDialogMessage(page: Page): Promise<string> {
 }
 
 test('GundamLogin', async ({ page }) => {
-  await page.goto('');
+  await page.goto('./');
   
   await page.getByRole('textbox', { name: 'Enter your username' }).click();
   await page.getByRole('button', { name: 'Create Account' }).click();
