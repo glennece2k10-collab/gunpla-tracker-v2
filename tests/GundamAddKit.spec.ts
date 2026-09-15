@@ -10,7 +10,7 @@ function captureDialogMessage(page: Page): Promise<string> {
 }
 
 test('test', async ({ page }) => {
-  await page.goto('');
+  await page.goto('./');
   await page.getByRole('button', { name: 'Create Account' }).click();
   await page.getByRole('textbox', { name: 'Choose a username' }).click();
   await page.getByRole('textbox', { name: 'Choose a username' }).fill(process.env.TEST_USERNAME!);
