@@ -23,7 +23,7 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
       env:
-          GUNPLA_SITE: ${{ secrets.GUNPLASITE }}
+          GUNPLA_SITE: ${{ secrets.GUNPLA_SITE }}
           TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
           TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
